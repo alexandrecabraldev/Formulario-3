@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Button } from "./Button";
 import { InputBox } from "./InputBox";
 import { TitleForm } from "./TitleForm";
 
@@ -30,28 +31,32 @@ const ContainerSectionInputs = styled.div`
 
 export function Form(){
     return (
-        <ContainerForm>
+        <>
+            <ContainerForm>
 
-            <TitleForm sizeFont={24} lineDistance={16}>Informações pessoais</TitleForm>
-            <ContainerSectionInputs>
-                <ContainerInputs>
-                    <InputBox>Nome</InputBox>
-                    <InputBox>Sobrenome</InputBox>
-                </ContainerInputs>
-            
-                <InputBox subtitle={"(digite um email válido)"}>Email</InputBox>
-                <InputBox subtitle={"(mínimo de 6 caracteres)"}>Senha</InputBox>
-            </ContainerSectionInputs>
-            
-            <TitleForm sizeFont={24} lineDistance={8}>Informações do mentor</TitleForm>
-            <ContainerSectionInputs>
-                <InputBox subtitle={"(só o primeiro nome)"}>Nome do seu mentor</InputBox>
-            </ContainerSectionInputs>
+                <TitleForm sizeFont={24} lineDistance={16}>Informações pessoais</TitleForm>
+                <ContainerSectionInputs>
+                    <ContainerInputs>
+                        <InputBox>Nome</InputBox>
+                        <InputBox>Sobrenome</InputBox>
+                    </ContainerInputs>
+                
+                    <InputBox subtitle={"(digite um email válido)"}>Email</InputBox>
+                    <InputBox subtitle={"(mínimo de 6 caracteres)"}>Senha</InputBox>
+                </ContainerSectionInputs>
+                
+                <TitleForm sizeFont={24} lineDistance={8}>Informações do mentor</TitleForm>
+                <ContainerSectionInputs>
+                    <InputBox subtitle={"(só o primeiro nome)"}>Nome do seu mentor</InputBox>
+                </ContainerSectionInputs>
 
-            <TitleForm sizeFont={24} lineDistance={8}>Seus horários disponíveis</TitleForm>
-            <TitleForm sizeFont={20} lineDistance={0} disabledLine>Primeira mentoria</TitleForm>
-            <TitleForm sizeFont={20} lineDistance={0} disabledLine>Segunda mentoria</TitleForm>
+                <TitleForm sizeFont={24} lineDistance={8}>Seus horários disponíveis</TitleForm>
+                <TitleForm sizeFont={20} lineDistance={0} disabledLine>Primeira mentoria</TitleForm>
+                <TitleForm sizeFont={20} lineDistance={0} disabledLine>Segunda mentoria</TitleForm>
 
-        </ContainerForm>
+            </ContainerForm>
+
+            <Button/>
+        </>
     );
 }

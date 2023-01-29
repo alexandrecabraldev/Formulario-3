@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
         background-color: ${props=>props.theme.bodyBackgroundColor};
     }
 
-    h1,h2{
+    h1,h2, button{
         font-family: 'Staatliches', sans-serif;
         font-weight: 400;
     }
