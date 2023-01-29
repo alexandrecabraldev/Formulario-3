@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
-export const TitleForm = styled.h1`
+interface TypeTitleForm {
+    sizeFont:number,
+    lineDistance:number,
+    disabledLine?:boolean
+}
+
+export const TitleForm = styled.h1<TypeTitleForm>`
     padding-bottom: ${props=>props.lineDistance/16}rem;
 
     

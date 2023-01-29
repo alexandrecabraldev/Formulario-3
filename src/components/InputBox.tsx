@@ -28,12 +28,17 @@ const ContainerInputBox = styled.div`
 
 `;
 
-export function InputBox(props){
+interface TypeInputBox{
+    children:string,
+    subtitle?:string
+}
+
+export function InputBox(props:TypeInputBox){
     return(
         <ContainerInputBox>
             <div>
                 <label>{props.children}</label>
-                <span>{props.subTitle}</span>
+                <span>{props.subtitle}</span>
             </div>
 
             <input type="text" title="nome"></input>

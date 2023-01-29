@@ -39,8 +39,8 @@ export function Form(){
                     <InputBox>Sobrenome</InputBox>
                 </ContainerInputs>
             
-                <InputBox subTitle={"(digite um email válido)"}>Email</InputBox>
-                <InputBox subTitle={"(mínimo de 6 caracteres)"}>Senha</InputBox>
+                <InputBox subtitle={"(digite um email válido)"}>Email</InputBox>
+                <InputBox subtitle={"(mínimo de 6 caracteres)"}>Senha</InputBox>
             </ContainerSectionInputs>
             
             <TitleForm sizeFont={24} lineDistance={8}>Informações do mentor</TitleForm>
@@ -49,8 +49,8 @@ export function Form(){
             </ContainerSectionInputs>
 
             <TitleForm sizeFont={24} lineDistance={8}>Seus horários disponíveis</TitleForm>
-            <TitleForm sizeFont={20} disabledLine>Primeira mentoria</TitleForm>
-            <TitleForm sizeFont={20} disabledLine>Segunda mentoria</TitleForm>
+            <TitleForm sizeFont={20} lineDistance={0} disabledLine>Primeira mentoria</TitleForm>
+            <TitleForm sizeFont={20} lineDistance={0} disabledLine>Segunda mentoria</TitleForm>
 
         </ContainerForm>
     );
