@@ -23,7 +23,7 @@ const ContainerButton = styled.div`
 export function Button(){
     return (
         <ContainerButton>
-            <button type="submit">Salvar</button>
+            <button form={"Form"} type="submit">Salvar</button>
         </ContainerButton>
     );
 }

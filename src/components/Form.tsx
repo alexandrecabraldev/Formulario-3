@@ -3,7 +3,7 @@ import { Button } from "./Button";
 import { InputBox } from "./InputBox";
 import { TitleForm } from "./TitleForm";
 
-const ContainerForm = styled.form`
+export const ContainerForm = styled.form`
     max-width: 46.875rem;
     min-width: 318px;
     padding: 4rem;
@@ -32,7 +32,7 @@ const ContainerSectionInputs = styled.div`
 export function Form(){
     return (
         <>
-            <ContainerForm>
+            <ContainerForm id="Form">
 
                 <TitleForm sizeFont={24} lineDistance={16}>Informações pessoais</TitleForm>
                 <ContainerSectionInputs>
